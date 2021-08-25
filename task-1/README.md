@@ -31,12 +31,8 @@ You should have implemented the different screens of your application (possibly 
 
 Your task should meet the assesment criteria in the **Final Project - Scorecard Rubric**.
 
-## Example 1: 
-
-![](./images/wireframes.png) 
-
-## Example 2:
+## Example 1:
 ![](./images/moqups-example.png) 
 
-## Example 3: Moqup layout w/ task card added 
+## Example 2: Moqup layout w/ task card added 
 ![](./images/moqup-with-task.png)
