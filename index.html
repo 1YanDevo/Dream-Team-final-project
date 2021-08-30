@@ -17,16 +17,14 @@
   </head>
   <body>
     <header>
-      <div class="container-fluid bg-primary text-center py-5">
+      <div class="container-fluid bg-primary text-white text-center py-5">
         <h1 class="display-1">HPY TASKS</h1>
         <!-- Align Vertial-->
       </div>
 
-      <div class="container-fluid bg-primary text-center my-4 py-3">
-        <h2 class="display-6">
-          Greetings Earthlings
-          <!-- Align Vertical-->
-        </h2>
+      <div class="container-fluid bg-primary text-white text-center my-4 py-3">
+        <h2 class="display-6">Greetings Earthlings</h2>
+        <!-- Align Vertical-->
       </div>
     </header>
 
@@ -34,14 +32,14 @@
       <form action="/action_page.php">
         <div class="row">
           <div class="col-25">
-            <label for="Tskname">Task Name:</label>
+            <label for="taskname">Task Name</label>
           </div>
           <div class="col-75">
             <input
               type="text"
-              id="Tskname"
+              id="  taskname"
               name="taskname"
-              placeholder="Task Name.."
+              placeholder="Task Name"
             />
           </div>
         </div>
@@ -53,28 +51,28 @@
             <input
               type="text"
               id="assignedto"
-              name="assigned"
-              placeholder="Task Assigned To.."
+              name="assignedto"
+              placeholder="Assigned To"
             />
           </div>
         </div>
         <div class="row">
           <div class="col-25">
-            <label for="Ddate">Due Date</label>
+            <label for="ddate">Due Date</label>
           </div>
           <div class="col-75">
-            <input type="text" id="Ddate" name="due" placeholder="mm/dd/yyyy" />
+            <input type="text" id="ddate" name="ddate" placeholder="MM/DD/YYYY" />
           </div>
         </div>
         <div class="row">
           <div class="col-25">
-            <label for="subject">Subject</label>
+            <label for="subject">Desctipion</label>
           </div>
           <div class="col-75">
             <textarea
               id="subject"
               name="subject"
-              placeholder="Write something.."
+              placeholder="Description"
               style="height: 200px"
             ></textarea>
           </div>
@@ -85,6 +83,46 @@
           </button>
         </div>
       </form>
+    </div>
+
+    <br>
+
+    <div class="hello d-flex justify-content-center">
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+      <div class="card-header">"Task Name"</div>
+      <div class="card-body">"Assigned To"
+        <p class="card-title">"Due Date</p>
+        <p class="card-text">"Desctipion"</p>
+      </div>
+    </div>
+    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Secondary card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Success card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Danger card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card text-dark bg-warning mb-3" style="max-width: 18rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Warning card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
