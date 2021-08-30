@@ -12,56 +12,80 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-    <link href="assets/css/styles.css" rel="stylesheet">
-
-    <title>Task Manager</title>
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <title>HPY Tasks</title>
   </head>
   <body>
-    <h1>Task Manager</h1>
+    <header>
+      <div class="container-fluid bg-primary text-center py-5">
+        <h1 class="display-1">HPY TASKS</h1>
+        <!-- Align Vertial-->
+      </div>
+
+      <div class="container-fluid bg-primary text-center my-4 py-3">
+        <h2 class="display-6">
+          Greetings Earthlings
+          <!-- Align Vertical-->
+        </h2>
+      </div>
+    </header>
 
     <div class="container">
       <form action="/action_page.php">
-      <div class="row">
-        <div class="col-25">
-          <label for="tname">Task Name</label>
+        <div class="row">
+          <div class="col-25">
+            <label for="Tskname">Task Name:</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="Tskname"
+              name="taskname"
+              placeholder="Task Name.."
+            />
+          </div>
         </div>
-        <div class="col-75">
-          <input type="text" id="tname" name="taskname" placeholder="Task Name">
+        <div class="row">
+          <div class="col-25">
+            <label for="assignedto">Assigned To</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="assignedto"
+              name="assigned"
+              placeholder="Task Assigned To.."
+            />
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="aname">Assigned Name</label>
+        <div class="row">
+          <div class="col-25">
+            <label for="Ddate">Due Date</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="Ddate" name="due" placeholder="mm/dd/yyyy" />
+          </div>
         </div>
-        <div class="col-75">
-          <input type="text" id="aname" name="assignedname" placeholder="Assigned Name">
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="ddate">Due Date</label>
+        <div class="row">
+          <button type="button" class="btn btn-primary btn-lg btn-block">
+            ADD TASK
+          </button>
         </div>
-        <div class="col-75">
-          <input type="text" id="ddate" name="duedate" placeholder="MM/DD/YYYY">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="description">Description</label>
-        </div>
-        <div class="col-75">
-          <textarea id="description" name="description" placeholder="Description" style="height:200px"></textarea>
-        </div>
-      </div>
-      <div class="row">
-        <button type="button" class="btn btn-primary btn-lg btn-block">Add Task</button>
-      </div>
       </form>
     </div>
-    
-    </body>
-    </html>
-    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
