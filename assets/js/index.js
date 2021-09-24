@@ -12,6 +12,13 @@ const validFormValidInput = () => {
     const duedates = document.querySelector('#duedate');
     const getDuedates = duedates.value;
 
+    const alertEl = document.getElementsByClassName('alert')
+    
+    if(getTasks === "" || getDescriptions === "" || getUsers === "" || getDuedates === "") {
+        alert("Please check for valid input :)");
+        return;      
+    }
+    
     console.log("name:  "+getTasks);
     console.log("name:  "+getDescriptions);
     console.log("name:  "+getUsers);
@@ -20,6 +27,8 @@ const validFormValidInput = () => {
 
 const submitbuttonEL = document.getElementById('submitbutton');
 submitbuttonEL.addEventListener('click', validFormValidInput);
+
+
 
 
 
